@@ -45,9 +45,9 @@ export function meetTheQueen(): void {
 
 function getWitnesses(): Array<Witness> {
   return [
-    { name: "The March Hare", giveEvidence: () => "Guilty" },
-    { name: "The Mad Hatter", giveEvidence: () => "Guilty" },
-    { name: "The White Rabbit", giveEvidence: () => "Guilty" },
+    { name: "The March Hare", giveEvidence: () => "Not Guilty" },
+    { name: "The Mad Hatter", giveEvidence: () => "Not Guilty" },
+    { name: "The White Rabbit", giveEvidence: () => "Not Guilty" },
     { name: "The Cheshire Cat", giveEvidence: () => "Not Guilty" },
   ];
 }
