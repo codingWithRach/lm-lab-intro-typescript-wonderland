@@ -1,6 +1,6 @@
 import { endAdventure } from "..";
 import { askQuestion, clear, print } from "../console";
-import { takeAPotion } from "./2a_potion";
+import { chooseAPotion } from "./2a_potion";
 
 const expressions = [
   "☹ Frown ☹",
@@ -26,9 +26,9 @@ export function meetTheCheshireCat(): void {
 
   if (theCat.expression === "😁 Grin 😁") {
     print(
-      `The cat allows you to continue onwards. But you can't fit through the door - first you need to take a potion...`
+      `The cat allows you to continue onwards, but you can't fit through the door.  First you will need to take a potion...`
     );
-    return askQuestion("Press ENTER to continue! ", takeAPotion);
+    return askQuestion("Press ENTER to continue! ", chooseAPotion);
   } else {
     print(`😱 The cat will not allow you to pass. 😱 `);
     return endAdventure();
